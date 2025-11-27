@@ -1,0 +1,40 @@
+{
+  "name": "relationship-optimizer",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AI-powered relationship optimization platform for building, maintaining, and optimizing meaningful connections",
+  "scripts": {
+    "dev": "vite",
+    "dev:all": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "test": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "dependencies": {
+    "@clerk/clerk-react": "^5.4.0",
+    "@supabase/supabase-js": "^2.27.0",
+    "lucide-react": "^0.263.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.26.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/ui": "^4.0.6",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.6.0",
+    "jsdom": "^27.1.0",
+    "postcss": "^8.4.42",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.1",
+    "vitest": "^4.0.6"
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Share analyzer between frontend and edge functions",
+    "status": "not-started",
+    "description": "Extract WCAG analyzer logic into a single Deno-compatible module and import it from both the frontend (via build) and the Supabase edge functions to prevent drift."
+  },
+  {
+    "id": 2,
+    "title": "Unify contrast utilities",
+    "status": "not-started",
+    "description": "Create a shared contrast helper with comprehensive color parsing and reuse it across browser and edge environments."
+  },
+  {
+    "id": 3,
+    "title": "Standardize edge function responses and iteration management",
+    "status": "not-started",
+    "description": "Update process-upload and refine-code to return consistent payloads and perform atomic iteration inserts with database safety."
+  },
+  {
+    "id": 4,
+    "title": "Add server-side file validation",
+    "status": "not-started",
+    "description": "Ensure edge functions validate file types and sizes to complement frontend checks."
+  },
+  {
+    "id": 5,
+    "title": "Implement CSS stylesheet parsing for contrast checks",
+    "status": "not-started",
+    "description": "Enhance WCAG analyzer to parse linked stylesheets and class-based colors for accurate contrast evaluation."
+  },
+  {
+    "id": 6,
+    "title": "Create analyzer test harness",
+    "status": "not-started",
+    "description": "Add automated tests verifying analyzer and contrast helpers in both Node and Deno contexts."
+  }
+]
