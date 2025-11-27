@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route, Navigate, useLocation, useNavigate } from
 import LandingPage from './components/LandingPage';
 import SignUpPage from './components/SignUpPage';
 import UploadPage from './components/UploadPage';
+import React from "react";
 import ProcessPage from './components/ProcessPage';
 import ResultPage from './components/ResultPage';
 
