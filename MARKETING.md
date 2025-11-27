@@ -1,3 +1,5 @@
+
+> **Security Notice:** No real secrets or API keys are present in this file. All values are placeholders. Never commit real secrets to documentation or version control.
 # WCAG Master - Marketing Copy & Social Media Assets
 
 ## Product Tagline
