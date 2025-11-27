@@ -5405,7 +5405,7 @@ SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhY
 CLERK_SECRET_KEY=sk_test_SPLifVk81GFrAGLDL4PRK1K3TkFDEsQxnDMC3xEq3S
 #CLERK_WEBHOOK_SECRET=your_clerk_webhook_secret
 
-OPENAI_API_KEY=REMOVED_SECRET
+
 
 
 is definitely correct thusfar For webhooks, i need to deploy to vercel first.
@@ -5650,7 +5650,7 @@ Would you like me to generate the exact code changes and package cleanup for ste
 
 ---
 
-_**User (2025-11-27 11:44Z)**_
+_**User (2025-11-27 11:46Z)**_
 
 
 Proceed.
@@ -5670,7 +5670,45 @@ _**Agent (model copilot/gpt-4.1)**_
 ```
 
 ```
+- All unavailable UI dependencies have been removed from `package.json`.
+- The dependency tree is now clean; `npm install` and `npm audit fix` completed with only minor peer warnings and two known vulnerabilities (which require a major Vite upgrade to fully resolve).
 
+**Next, you should:**
+1. Run `npm run build` and `npm run lint` to confirm the codebase is error-free.
+2. Remove any remaining dead imports/usages of unavailable UI components in your codebase.
+3. Run your test suite (`npm run test`) to ensure all core flows are covered and passing.
+
+Would you like me to proceed with a full dead import scan and removal, or focus on build/lint/test validation next?
+
+---
+
+_**User (2025-11-27 11:47Z)**_
+
+Prcoeed.
+Execute with SURGICAL PRECISION and implement cohesively prioritising functionality and seamlessness. Stick only to what you've devised and don't overengineer nor neglect nor go sideways.
+
+
+
+---
+
+_**Agent (model copilot/gpt-4.1)**_
+
+Your build is still failing due to the presence of broken files:
+- `context-menu.tsx`
+- `drawer.tsx`
+- `slider.tsx`
+
+These files are not only referencing unavailable dependencies, but are also syntactically broken and must be deleted immediately.
+
+**Surgical next step:**
+1. Delete:
+   - `context-menu.tsx`
+   - `drawer.tsx`
+   - `slider.tsx`
+2. Commit and push.
+
+This will eliminate the current build errors and move you to a deployable state.  
+Proceeding to delete these files now. 
 
 ---
 
