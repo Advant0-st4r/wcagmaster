@@ -61,6 +61,9 @@ export default function App() {
 }
 
 // SSO callback handler: redirects to intended path or /upload
+import React from 'react';
+import { ClerkProvider, ClerkLoaded, ClerkLoading, useAuth } from '@clerk/clerk-react';
+import { BrowserRouter, Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom';
 function SSORedirect() {
   const navigate = useNavigate();
   React.useEffect(() => {
